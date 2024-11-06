@@ -70,10 +70,33 @@ export const Column = styled.div`
 
 `
 
-export const InputsContainer = styled.div`
+export const InputsContainer = styled.form`
     margin: 0 20px 0 40px;
+
     max-width: 450px;
     min-height: 308px;
+
+    button{
+        width: 100px;
+        height: 40px;
+
+        margin-top: 10px;
+
+        background: #00ffff;
+
+        border: none; 
+        border-radius: 3px;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        &:hover{
+            cursor: pointer;
+            
+        }
+    }
+    
+
+
 `
 
 export const InformationsContainer = styled.div`
@@ -95,7 +118,7 @@ export const InformationsNavItem = styled.div`
     display: flex;
 
     &:nth-child(3){
-        margin-bottom: 25px;
+        margin: 2px 0 25px 0;
     }
 
     &:last-child{
