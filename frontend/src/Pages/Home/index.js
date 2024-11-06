@@ -13,11 +13,10 @@ const Home = () => {
 
                     <VerticalLine/>
 
-                    <Column>
+                    <Column className="skills-text">
                         <p>Desenvolvedor Full Stack</p>
-                        <p>React Js - HTML - CSS</p>
-                        <p>C# - WEB API's</p>
-                        <p>PostgreSQL - MySQL - SQLite</p>
+                        <p>React Js</p>
+                        <p>C#</p>
                     </Column>
                 </Row>
             </MainContentContainer>

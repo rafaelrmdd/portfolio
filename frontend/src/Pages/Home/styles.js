@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import "@fontsource/poppins";
+import "@fontsource/barlow";
+
 
 export const HomeContainer = styled.body`
     height: 100vh;
@@ -23,13 +25,20 @@ export const MainContentContainer = styled.main`
 export const Row = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    .skills-text{
+        font-family: "Barlow", "Sans-serif";
+        font-size: 1.8rem;
+        
+    }
 
 `
 
 export const Column = styled.div`
     display: flex;
     flex-direction: column
-
+    
 `
 
 export const VerticalLine = styled.div`
@@ -37,5 +46,6 @@ export const VerticalLine = styled.div`
     border-left: 2px solid #D1D5DB;
 
     margin-left: 50px;
-    margin-right: 25px;
+    margin-right: 50px;
 `
+
