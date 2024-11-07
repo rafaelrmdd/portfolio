@@ -1,6 +1,41 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import "@fontsource/barlow";
 
+export const top = keyframes`
+    from{
+        top: 500px;
+    }
+
+    to{
+        bottom: 0px;
+    }
+
+    0%, 75%{
+        opacity: 0;
+    }
+
+    100%{  
+        opacity: 1;
+    }
+`
+
+export const left = keyframes`
+    from{
+        left: 500px;
+    }
+
+    to{
+        left: 0px;
+    }
+
+    0%, 75%{
+        opacity: 0;
+    }
+
+    100%{  
+        opacity: 1;
+    }
+`
 
 export const ProjectsContainer = styled.body`
     height: 100vh;
@@ -20,6 +55,9 @@ export const MainContentContainer = styled.main`
     h1{
         font-family: "Poppins", "Sans-serif";
         
+        position: relative;
+
+        animation: ${left} 1s linear forwards;
     }
 `
 
@@ -37,6 +75,23 @@ export const ItemsContainer = styled.div`
 export const Item = styled.div`
     width: 100%;
     height: 280px;
+    background: red;
+
+    position: relative;
+
+    &:nth-child(1){
+        bottom: -500px;
+
+        animation: ${top} 1s linear forwards;
+        animation-delay: 0.5s;
+    }
+
+    &:nth-child(2){
+        bottom: -200px;
+
+        animation: ${top} 1.5s linear forwards;
+        animation-delay: 0.75s;
+    }
 
 `
 

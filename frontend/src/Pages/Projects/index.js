@@ -23,9 +23,11 @@ const Projects = () => {
                             <SiteName> <p>Nome do site</p> </SiteName>
                             <Icons> <FaGithub size={26}/><FaLinkedin size={26}/> </Icons>
                         </LowBar>
-
                     </Item>
 
+                    <Item>
+
+                    </Item>
                     <Item>
 
                     </Item>

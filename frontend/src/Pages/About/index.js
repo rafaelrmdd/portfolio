@@ -20,7 +20,6 @@ const About = () => {
                         </p>
 
                         <h2>Minhas habilidades:</h2>
-
                         <Row>
                             <ul>
                                 <li>React Js</li>
@@ -41,6 +40,7 @@ const About = () => {
                                 <li>SQL Server</li>
                             </ul>
                         </Row>
+                        
                     </Column>
 
                 </Row>

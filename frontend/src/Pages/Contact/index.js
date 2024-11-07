@@ -35,7 +35,6 @@ const Contact = () => {
             <MainContentContainer>
                 <Row>
                     <h1>Contato</h1>
-
                     <Column >
                         <InputsContainer ref={form} onSubmit={sendEmail}>
                             <input type="text" name="user_name" placeholder="Insira seu nome"/>
@@ -62,10 +61,8 @@ const Contact = () => {
                                 <a href="https://www.linkedin.com/in/rafaelrmd/"><FaLinkedin size={24} className="linkedin-icon"/></a>
                                 <a href="https://github.com/rafaelrmdd"><FaGithub size={24} className="github-icon"/></a>
                             </InformationsNavItem>
-
                         </InformationsContainer>
                     </Column>
-
                 </Row>
             </MainContentContainer>
         </ContactContainer>

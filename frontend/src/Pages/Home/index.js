@@ -4,7 +4,7 @@ import { Column, HomeContainer, MainContentContainer, Row, VerticalLine } from "
 const Home = () => {
     return(
         <HomeContainer>
-            <Header/>
+            <Header anim={"activated"}/>
             <MainContentContainer>
                 <Row>
                     <Column>

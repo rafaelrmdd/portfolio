@@ -1,11 +1,68 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import "@fontsource/barlow";
+
+export const left = keyframes`
+    from{
+        left: 400px;
+    }
+
+    to{
+        left: 0px;
+    }
+
+    0%, 75%{
+        opacity: 0;
+    }
+
+    100%{  
+        opacity: 1;
+    }
+`
+
+export const right = keyframes`
+    from{
+        right: 400px;
+    }
+
+    to{
+        right: 0px;
+    }
+
+    0%, 75%{
+        opacity: 0;
+    }
+
+    100%{  
+        opacity: 1;
+    }
+`
+
+export const top = keyframes`
+    from{
+        top: 200px;
+    }
+
+    to{
+        top: 0px;
+    }
+
+    0%, 75%{
+        opacity: 0;
+    }
+
+    100%{  
+        opacity: 1;
+    }
+`
 
 export const ContactContainer = styled.body`
     height: 100vh;
     width: 100%;
     
     background: #FFFFFF;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
 `
 
 export const MainContentContainer = styled.main`
@@ -16,6 +73,10 @@ export const MainContentContainer = styled.main`
     h1{
         font-family: "Poppins", "Sans-serif";
         line-height: 60px;
+
+        position: relative;
+
+        animation: ${left} 1s linear forwards;
     }
 `
 
@@ -76,6 +137,10 @@ export const InputsContainer = styled.form`
     max-width: 450px;
     min-height: 308px;
 
+    position: relative;
+
+    animation: ${right} 1.25s linear forwards;
+
     button{
         width: 100px;
         height: 40px;
@@ -89,6 +154,9 @@ export const InputsContainer = styled.form`
 
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+        position: relative;
+        animation: ${top} 1.50s linear forwards;
+
         &:hover{
             cursor: pointer;
             
@@ -101,6 +169,10 @@ export const InputsContainer = styled.form`
 
 export const InformationsContainer = styled.div`
     width: 300px;
+
+    position: relative;
+
+    animation: ${left} 1.50s linear forwards;
 
     h2{
         font-family: "Barlow", "Sans-serif";

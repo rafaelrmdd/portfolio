@@ -1,9 +1,9 @@
 import { HeaderContainer, NavigationItemsContainer } from "./styles";
 import { FaMoon } from "react-icons/fa";
 
-const Header = () => {
+const Header = ({anim}) => {
     return(
-        <HeaderContainer>
+        <HeaderContainer anim={anim}>
             Logo
             <NavigationItemsContainer>
                 <a href="/">Home</a>
