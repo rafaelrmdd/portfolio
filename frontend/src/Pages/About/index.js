@@ -13,10 +13,16 @@ const About = () => {
 
                     <Column>
                         <p className="main-text">
-                            Meu nome é Rafael, tenho 20 anos e sou um desenvolvedor full stack. Possuo formação em 
-                            Análise e Desenvolvimento de Sistemas pela UNIP e continuo aprimorando meus conhecimentos
-                            através de cursos e projetos pessoais. Estou aberto a oportunidades para conseguir encontrar
-                            meu primeiro emprego na área. <br/>
+                            Olá! Meu nome é Rafael e tenho 20 anos. Sou um desenvolvedor full stack com formação técnica em Análise e Desenvolvimento de Sistemas pela UNIP. 
+                            <br/><br/>
+                            Desde cedo, sempre tive grande interesse por tecnologia e desenvolvimento de software. Durante a faculdade, me envolvi em diversos projetos práticos que me permitiram aprimorar habilidades essenciais, como trabalho em equipe, resolução de problemas complexos e gestão de projetos. 
+                            <br/><br/>
+                            Atualmente, continuo aprimorando meus conhecimentos por meio de cursos online, leitura de artigos técnicos e projetos pessoais. Estou em busca de minha primeira oportunidade profissional na área de desenvolvimento de software, onde possa colocar em prática tudo o que aprendi e contribuir para o crescimento da empresa. 
+                            <br/><br/>
+                            Possuo familiaridade com diversas tecnologias, como React, C# e bancos de dados relacionais, além de experiência na criação de Web API's utilizando .NET Core e Entity Framework. Tenho paixão pelo que faço e estou animado para aprender e me desenvolver constantemente. 
+                            <br/><br/>
+                            Estou aberto a novas oportunidades e acredito que meu conhecimento técnico, habilidades de resolução de problemas e motivação podem agregar valor à sua equipe. Ficarei feliz em conversar mais sobre como posso contribuir para o sucesso do seu negócio. 
+                            <br/>
                         </p>
 
                         <h2>Minhas habilidades:</h2>

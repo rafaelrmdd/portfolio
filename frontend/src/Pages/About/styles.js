@@ -1,16 +1,17 @@
 import styled , { keyframes } from "styled-components";
 import "@fontsource/barlow";
+import "@fontsource/poppins/600.css"
 
 export const left = keyframes`
     from{
-        left: 400px;
+        left: 200px;
     }
 
     to{
         left: 0px;
     }
 
-    0%, 75%{
+    0%, 60%{
         opacity: 0;
     }
 
@@ -28,7 +29,7 @@ export const bottom = keyframes`
         bottom: 0px;
     }
 
-    0%, 75%{
+    0%, 60%{
         opacity: 0;
     }
 
@@ -39,14 +40,14 @@ export const bottom = keyframes`
 
 export const right = keyframes`
     from{
-        right: 500px;
+        right: 200px;
     }
 
     to{
         right: 0px;
     }
 
-    0%, 75%{
+    0%, 60%{
         opacity: 0;
     }
 
@@ -59,9 +60,9 @@ export const AboutContainer = styled.body`
     height: 100vh;
     width: 100%;
 
-    background: #FFFFFF;
+    background: var(--background-color);
 
-    overflow-y: hidden;
+    
     overflow-x: hidden;
 `
 
@@ -72,11 +73,13 @@ export const MainContentContainer = styled.main`
 
     h1{
         font-family: "Poppins", "Sans-serif";
+        font-weight: 600;
         line-height: 60px;
+        color: var(--font-color);
 
         position: relative;
 
-        animation: ${left} 1s linear forwards;
+        animation: ${right} 1.30s linear forwards;
     }
 
 `
@@ -89,12 +92,13 @@ export const Row = styled.div`
         text-align: justify;
         font-family: "Barlow", "Sans-serif";
         font-size: 1.8rem;
+        color: var(--font-color);
 
         position: relative;
         right: -1100px;
 
-        animation: ${right} 1s linear forwards;
-        animation-delay: 0.5s;
+        animation: ${left} 1.30s linear forwards;
+        animation-delay: 0.25s;
     }
 
     h2{
@@ -102,11 +106,13 @@ export const Row = styled.div`
 
         font-size: 2.3rem;
         font-family: "Poppins", "Sans-serif";
+        font-weight: 500;
+        color: var(--font-color);
 
         position: relative;
 
         animation: ${right} 1s linear forwards;
-        animation-delay: 1s;
+        animation-delay: 0.5s;
 
         right: 1000px;
 
@@ -127,6 +133,11 @@ export const Row = styled.div`
 
            font-family: "Barlow", "Sans-serif";
            font-size: 1.5rem;
+           color: var(--font-color);
+
+           &:last-child{
+            margin-bottom: 60px;
+           }
         }
     }
 `

@@ -1,16 +1,17 @@
 import styled, { keyframes } from "styled-components";
 import "@fontsource/barlow";
+import "@fontsource/poppins/600.css"
 
 export const top = keyframes`
     from{
-        top: 500px;
+        top: 200px;
     }
 
     to{
         bottom: 0px;
     }
 
-    0%, 75%{
+    0%, 60%{
         opacity: 0;
     }
 
@@ -19,16 +20,16 @@ export const top = keyframes`
     }
 `
 
-export const left = keyframes`
+export const right = keyframes`
     from{
-        left: 500px;
+        right: 200px;
     }
 
     to{
-        left: 0px;
+        right: 0px;
     }
 
-    0%, 75%{
+    0%, 60%{
         opacity: 0;
     }
 
@@ -41,7 +42,7 @@ export const ProjectsContainer = styled.body`
     height: 100vh;
     width: 100%;
     
-    background: #FFFFFF;
+    background: var(--background-color);
 `
 
 export const MainContentContainer = styled.main`
@@ -54,10 +55,12 @@ export const MainContentContainer = styled.main`
 
     h1{
         font-family: "Poppins", "Sans-serif";
+        font-weight: 600;
+        color: var(--font-color);
         
         position: relative;
 
-        animation: ${left} 1s linear forwards;
+        animation: ${right} 1.30s linear forwards;
     }
 `
 
@@ -75,22 +78,21 @@ export const ItemsContainer = styled.div`
 export const Item = styled.div`
     width: 100%;
     height: 280px;
-    background: red;
 
     position: relative;
 
     &:nth-child(1){
         bottom: -500px;
 
-        animation: ${top} 1s linear forwards;
-        animation-delay: 0.5s;
+        animation: ${top} 1.30s linear forwards;
+        animation-delay: 0.25s;
     }
 
     &:nth-child(2){
         bottom: -200px;
 
-        animation: ${top} 1.5s linear forwards;
-        animation-delay: 0.75s;
+        animation: ${top} 1.30s linear forwards;
+        animation-delay: 0.5s;
     }
 
 `
@@ -99,7 +101,7 @@ export const ImageContainer = styled.div`
     width: 100%;
     height: 90%;
 
-    border: solid 1px black;
+    border: solid 1px var(--border-color);
 
     img{
         height: 100%;
@@ -115,13 +117,21 @@ export const SiteName = styled.div`
     font-family: "Barlow", "Sans-serif";
     font-size: 20px;    
     font-weight: 600;
+    color: var(--font-color);
 
 `
 
 export const Icons = styled.div`
+    height: 30px;
+
     display: flex;
 
     gap: 8px;
+
+    a{
+        color: var(--font-color);
+    }
+    
 `
 
 export const LowBar = styled.div`
@@ -133,5 +143,4 @@ export const LowBar = styled.div`
     align-items: end;
 
     margin-top: 5px;
-
 `

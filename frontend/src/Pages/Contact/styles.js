@@ -1,9 +1,10 @@
 import styled, { keyframes } from "styled-components";
 import "@fontsource/barlow";
+import "@fontsource/poppins/600.css"
 
 export const left = keyframes`
     from{
-        left: 400px;
+        left: 200px;
     }
 
     to{
@@ -21,7 +22,7 @@ export const left = keyframes`
 
 export const right = keyframes`
     from{
-        right: 400px;
+        right: 200px;
     }
 
     to{
@@ -59,7 +60,7 @@ export const ContactContainer = styled.body`
     height: 100vh;
     width: 100%;
     
-    background: #FFFFFF;
+    background: var(--background-color);
 
     overflow-y: hidden;
     overflow-x: hidden;
@@ -72,11 +73,13 @@ export const MainContentContainer = styled.main`
 
     h1{
         font-family: "Poppins", "Sans-serif";
+        font-weight: 600;
         line-height: 60px;
+        color: var(--font-color);
 
         position: relative;
 
-        animation: ${left} 1s linear forwards;
+        animation: ${right} 1.30s linear forwards;
     }
 `
 
@@ -96,12 +99,15 @@ export const Column = styled.div`
         height: 60px;
         width: 450px;
 
+        background: var(--background-color);
+
         font-family: "Barlow", "Sans-serif";
 
         padding: 8px 16px;
 
         outline: none;
-        border: none;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
 
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -119,8 +125,11 @@ export const Column = styled.div`
 
         font-family: "Barlow", "Sans-serif";
 
+        background: var(--background-color);
+
         outline: none;
-        border: none;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
     
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -139,7 +148,7 @@ export const InputsContainer = styled.form`
 
     position: relative;
 
-    animation: ${right} 1.25s linear forwards;
+    animation: ${left} 2s linear forwards;
 
     button{
         width: 100px;
@@ -147,15 +156,18 @@ export const InputsContainer = styled.form`
 
         margin-top: 10px;
 
-        background: #00ffff;
+        color: #000;
+
+        background: var(--button-background);
 
         border: none; 
         border-radius: 3px;
 
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
         position: relative;
-        animation: ${top} 1.50s linear forwards;
+        animation: ${top} 2s linear forwards;
+        animation-delay: 0.50s;
 
         &:hover{
             cursor: pointer;
@@ -172,22 +184,30 @@ export const InformationsContainer = styled.div`
 
     position: relative;
 
-    animation: ${left} 1.50s linear forwards;
+    animation: ${left} 2.25s linear forwards;
+    
 
     h2{
         font-family: "Barlow", "Sans-serif";
         font-size: 1.8rem;
         line-height: 25px;
+        color: var(--font-color);
         
         margin-bottom: 15px;
     }
 
     p{
         font-size: 20px;
+        color: var(--font-color);
     }
 `
 export const InformationsNavItem = styled.div`
     display: flex;
+    color: var(--font-color);
+
+    p{
+        margin-left: 3px;
+    }
 
     &:nth-child(3){
         margin: 2px 0 25px 0;
@@ -198,7 +218,7 @@ export const InformationsNavItem = styled.div`
 
         a{
             text-decoration: none;
-            color: #000000;
+            color: var(--font-color);
         }
 
         .linkedin-icon:hover{

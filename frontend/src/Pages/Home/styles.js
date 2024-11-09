@@ -1,18 +1,19 @@
 import styled, { keyframes } from "styled-components";
-import "@fontsource/poppins";
+import "@fontsource/poppins/800.css";
+import "@fontsource/poppins/900.css";
 import "@fontsource/barlow";
 
 
 export const right = keyframes`
     from{
-        right: 400px;
+        right: 200px;
     }
 
     to{
         right: 0px;
     }
 
-    0%, 75%{
+    0%, 60%{
         opacity: 0;
     }
 
@@ -20,21 +21,18 @@ export const right = keyframes`
         opacity: 1;
     }
 
-    100%{  
-        opacity: 1;
-    }
 `
 
 export const left = keyframes`
     from{
-        left: 400px;
+        left: 200px;
     }
 
     to{
         left: 0px;
     }
 
-    0%, 75%{
+    0%, 60%{
         opacity: 0;
     }
 
@@ -45,11 +43,19 @@ export const left = keyframes`
 
 export const top = keyframes`
     from{
-        top: 800px
+        top: 300px
     }
 
     to{
-        bottom: 0px;
+        top: 0px;
+    }
+
+    0%, 60%{
+        opacity: 0;
+    }
+
+    100%{  
+        opacity: 1;
     }
 
 `
@@ -58,7 +64,7 @@ export const HomeContainer = styled.body`
     height: 100vh;
     width: 100%;
 
-    background: #FFFFFF;
+    background: var(--background-color);
 
     overflow-y: hidden;
     overflow-x: hidden;
@@ -70,20 +76,23 @@ export const MainContentContainer = styled.main`
     font-size: 2rem;
 
     h1{
-        font-weight: 900;
+        font-weight: 800;
         font-family: "Poppins", "Sans-serif";
+        color: var(--font-color);
 
         position: relative;
 
-        animation: ${left} 1.5s linear forwards; 
+        animation: ${left} 1s linear forwards; 
     }
 
     p{
         font-family: "Barlow", "Sans-serif";
         font-size: 1.8rem;  
+        font-weight: 400;
+        color: var(--font-color);
 
         position: relative;
-        animation: ${right} 1.5s linear forwards; 
+        animation: ${right} 1s linear forwards; 
     }
 
 `
@@ -108,9 +117,9 @@ export const VerticalLine = styled.div`
     margin-right: 50px;
 
     position: relative;
-    bottom: -800px;
+    top: 200px;
 
-    animation: ${top} 0.75s linear forwards;
-    animation-delay: 1s;
+    animation: ${top} 1.25s linear forwards;
+    
 `
 

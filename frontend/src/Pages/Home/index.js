@@ -1,11 +1,19 @@
+import { useState } from "react";
 import Header from "../../components/Header";
 import { Column, HomeContainer, MainContentContainer, Row, VerticalLine } from "./styles";
 
 const Home = () => {
+
+    let [theme, setTheme] = useState("light")
+
+    const handleTheme = () => {
+        setTheme(theme === "light" ? "dark" : "light")
+    }
+
     return(
-        <HomeContainer>
-            <Header anim={"activated"}/>
-            <MainContentContainer>
+        <HomeContainer theme={theme}>
+            <Header anim={"activated"} onClick={handleTheme}/>
+            <MainContentContainer theme={theme}>
                 <Row>
                     <Column>
                         <h1>DESENVOLVEDOR <br/> FULL STACK</h1> 
@@ -13,7 +21,7 @@ const Home = () => {
 
                     <VerticalLine/>
 
-                    <Column className="skills-text">
+                    <Column>
                         <p>Desenvolvedor Full Stack</p>
                         <p>React Js</p>
                         <p>C#</p>
