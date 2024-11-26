@@ -1,7 +1,5 @@
 import { AboutContainer, Column, MainContentContainer, Row } from "./styles";
 import Header from "../../components/Header";
-import { FaLocationDot } from "react-icons/fa6";
-
 
 const About = () => {
     return (

@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Header from "../../components/Header";
 import { Column, HomeContainer, MainContentContainer, Row, VerticalLine } from "./styles";
+import Header from "../../components/Header";
+
 
 const Home = () => {
 

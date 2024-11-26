@@ -3,7 +3,7 @@ import {
     LowBar, Icons 
 } from "./styles";
 import Header from "../../components/Header";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import example from "../../assets/imgs/example.jpeg";
 import { GoLink } from "react-icons/go";
 

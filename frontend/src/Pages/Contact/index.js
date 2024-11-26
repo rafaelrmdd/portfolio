@@ -5,8 +5,6 @@ import { ContactContainer, MainContentContainer, Row, Column, InputsContainer, I
 import { MdOutlineEmail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
-
 
 const Contact = () => {
 
