@@ -1,7 +1,4 @@
 import { HeaderContainer, NavigationItemsContainer } from "./styles";
-import { FaMoon } from "react-icons/fa";
-import { useState } from "react";
-import { MdOutlineLightMode } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 const Header = ({anim}) => {
