@@ -9,7 +9,6 @@ export const below = keyframes`
     to{
         top: 0px;
     }
-
 `
 
 export const HeaderContainer = styled.header`
@@ -31,6 +30,12 @@ export const HeaderContainer = styled.header`
 
     animation: ${props => props.anim === "activated" ? css`${below} 0.5s linear forwards` : "none"};
     animation-delay: 0.5s;
+
+    img{
+        height: 32px;
+        width: 32px;
+        margin-top: -15px;
+    }
 
     a{
         text-decoration: none;

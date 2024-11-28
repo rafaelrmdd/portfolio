@@ -1,5 +1,6 @@
 import { HeaderContainer, NavigationItemsContainer } from "./styles";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/imgs/logo.png"
 
 const Header = ({anim}) => {
 
@@ -31,7 +32,7 @@ const Header = ({anim}) => {
 
     return(
         <HeaderContainer anim={anim}>
-            Logo
+            <img src={logo} alt="Logo"/>
             <NavigationItemsContainer>
                 <span onClick={handleClick}>Início</span>
                 <span onClick={handleClick}>Projetos</span>
