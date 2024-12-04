@@ -4,11 +4,11 @@ import "@fontsource/poppins/600.css"
 
 export const top = keyframes`
     from{
-        top: 200px;
+        top: 100px;
     }
 
     to{
-        bottom: 0px;
+        top: 0px;
     }
 
     0%, 60%{
@@ -49,6 +49,7 @@ export const MainContentContainer = styled.main`
     margin: 0 150px;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
     font-size: 2rem;
@@ -59,40 +60,35 @@ export const MainContentContainer = styled.main`
         color: var(--font-color);
         
         position: relative;
+        text-align: center;
+
+        margin-bottom: 20px;
 
         animation: ${right} 1.30s linear forwards;
     }
 `
 
 export const ItemsContainer = styled.div`
-    width: 50%;
+    width: 100%;
     min-height: 250px;
-
-    margin: 0 0 100px 40px;
-
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-between;
+
+    margin: 0 0 75px 0;
 `
 
 export const Item = styled.div`
-    width: 100%;
+    width: 47%;
     height: 280px;
 
     position: relative;
 
-    &:nth-child(1){
-        bottom: -500px;
+    animation: ${top} 1.30s linear forwards;
+    animation-delay: 0.25s;
 
-        animation: ${top} 1.30s linear forwards;
-        animation-delay: 0.25s;
-    }
-
-    &:nth-child(2){
-        bottom: -200px;
-
-        animation: ${top} 1.30s linear forwards;
-        animation-delay: 0.5s;
+    &:not(:last-child):not(:nth-last-child(2)) {
+        margin-bottom: 40px;
     }
 
 `
@@ -101,7 +97,17 @@ export const ImageContainer = styled.div`
     width: 100%;
     height: 90%;
 
-    border: solid 1px var(--border-color);
+    border: 1px solid black;
+    position: relative;
+
+    #development-advice {
+        position: absolute;
+        top: 40%;  
+        left: 50px;  
+        z-index: 10;
+        color: red;
+        font-weight: bold;
+    }
 
     img{
         height: 100%;
