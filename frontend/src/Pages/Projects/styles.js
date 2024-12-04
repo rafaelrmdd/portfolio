@@ -83,6 +83,7 @@ export const Item = styled.div`
     height: 280px;
 
     position: relative;
+    bottom: -500px;
 
     animation: ${top} 1.30s linear forwards;
     animation-delay: 0.25s;
